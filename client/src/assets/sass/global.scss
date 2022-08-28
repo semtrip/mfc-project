@@ -1,0 +1,71 @@
+
+@font-face {
+	font-family: 'Pobeda';
+	src: url('../font/Pobeda-Bold.eot');
+	src: local('Pobeda Bold'), local('Pobeda-Bold'),
+		url('../font/Pobeda-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/Pobeda-Bold.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pobeda';
+	src: url('../font/Pobeda-Regular.eot');
+	src: local('Pobeda Regular'), local('Pobeda-Regular'),
+		url('../font/Pobeda-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/Pobeda-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Algerian';
+    src: local('Algerian Condensed Regular'), local('Algerian-Condensed-Regular'),
+        url('../font/AlgerianCondensedLetPlain.woff2') format('woff2'),
+        url('../font/AlgerianCondensedLetPlain.woff') format('woff'),
+        url('../font/AlgerianCondensedLetPlain.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'TedescaLamont';
+	src: local('TedescaLamont'),
+		url('../font/Tedesca-Lamont.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pobeda';
+}
+
+.container {
+	width: 1670px;
+	margin: 0 auto;
+}
+@media (max-width: 1700px) {
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+.page {
+	height: 100%;
+	position: relative;
+}
+.show-modal {
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-right: 15px;
+}
+@media (max-width: 600px) {
+	.show-modal {
+		padding-right: 0;
+	}
+}
