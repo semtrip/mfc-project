@@ -5,13 +5,14 @@
     background: url(../img/bg1.png) no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     .header {
         width: 100%;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 999;
-        padding: 30px 0;
+        padding: 1.56vw 0;
         &--content {
             width: 100%;
             display: flex;
@@ -24,10 +25,10 @@
             justify-content: space-between;
             .item {
                 user-select: none;
-                width: 109px;
-                height: 109px;
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-                margin-right: 66px;
+                width: 5.68vw;
+                height: 5.68vw;
+                filter: drop-shadow(0px 0.21vw 0.21vw rgba(0, 0, 0, 0.5));
+                margin-right: 3.44vw;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
@@ -41,18 +42,22 @@
                 }
                 &.logo {
                     background: url(../img/ico/logo.png) no-repeat;
+                    background-size: cover;
                     background-position: center;
                 }
                 &.discord {
                     background: url(../img/ico/discord.png) no-repeat;
+                    background-size: cover;
                     background-position: center;
                 }
                 &.twiter {
                     background: url(../img/ico/twiter.png) no-repeat;
+                    background-size: cover;
                     background-position: center;
                 }
                 &.opensea {
                     background: url(../img/ico/opensea.png) no-repeat;
+                    background-size: cover;
                     background-position: center;
                 }
                 &.coming {
@@ -63,39 +68,29 @@
                 }
                 &.coming::after {
                     position: absolute;
-                    bottom: -35px;
-                    content: 'Coming soon';
+                    top: 3.82vw;
+                    content: '';
                     display: block;
-                    width: 70px;
-                    height: 70px;
-                    background: #CE0031;
-                    border: 1px solid #410F08;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    border-radius: 50px;
-                    font-size: 18px;
-                    color: #FFCB06;
-                    padding: 10px;
-                    box-sizing: border-box;
-                    cursor: default;
-                    user-select: none;
+                    width: 3.65vw;
+                    height: 3.65vw;
+                    background: url(../img/ico/coming.svg);
+                    background-size: cover;
                 }
             }
         }
         .btn {
             user-select: none;
-            min-width: 269px;
-            min-height: 86px;
+            min-width: 14.01vw;
+            min-height: 4.48vw;
             background: #CE0031;
-            border: 1px solid #550003;
+            border: 0.05vw solid #550003;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 100px;
+            border-radius: 5.21vw;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 35px;
+            font-size: 1.82vw;
             color: #ffffff;
             transition: all .2s;
             &:hover {
@@ -154,25 +149,16 @@
         transform: rotate(5deg);
     }
 }
-@media (max-width: 1200px) {
-    .header {
-        zoom: .8;
-    }
-}
-@media (max-width: 900px) {
-    .header {
-        zoom: .6;
-    }
-}
 @media (max-width: 600px) {
     .mainBlock {
-        background: url(../img/bg-mobile.png) no-repeat;
+        background: url(../img/bg-mobile.svg) no-repeat;
         background-size: cover;
         background-position: top center;
         min-height: 160vw;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: -2px;
         .content {
             left: 0;
             right: 0;
@@ -181,6 +167,7 @@
             height: 101vw;
             padding-top: 18.33vw;
             padding-bottom: 12.33vw;
+            margin: 0 auto;
             ul {
                 li {
                     font-size: 3.5vw;
@@ -190,23 +177,25 @@
                 font-size: 3.5vw;
             }
         }
-    }
-    .header {
-        zoom: .5;
-    }
-}
-@media (max-width: 500px) {
-    .header {
-        zoom: .4;
-    }
-}
-@media (max-width: 400px) {
-    .header {
-        zoom: .3;
-    }
-}
-@media (max-width: 300px) {
-    .header {
-        zoom: .2;
+        .header {
+            .social {
+                .item {
+                    width: 12vw;
+                    height: 12vw;
+                    &.coming::after {
+                        top: 8.67vw;
+                        width: 6.67vw;
+                        height: 6.67vw;
+                    }
+                }
+            }
+            .btn {
+                min-width: 23.83vw;
+                min-height: 7.67vw;
+                border: 0.05vw solid #550003;
+                border-radius: 5.21vw;
+                font-size: 3.33vw;
+            }
+        }
     }
 }
