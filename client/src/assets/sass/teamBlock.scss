@@ -212,7 +212,7 @@
             .list {
                 width: 38.91vw;
                 height: 43.65vw;
-                background: url(../img/list2.png);
+                background: url(../img/list2.svg);
                 background-size: contain;
                 margin-bottom: 2.92vw;
                 padding-top: 3.39vw;
@@ -246,6 +246,13 @@
                         height: 4.01vw;
                         background: url(../img/ico/sfer.png);
                         background-size: contain;                        
+                    }
+                    .img {
+                        margin-top: 2.08vw;
+                        width: 24.48vw;
+                        height: 7.78vw;
+                        background: url(../img/peds/6.svg);
+                        background-size: contain; 
                     }
                 }
                 p {
@@ -513,6 +520,11 @@
                         .sfer {
                             width: 7.50vw;
                             height: 7.50vw;                     
+                        }
+                        .img {
+                            margin-top: 4.67vw;
+                            width: 52.33vw;
+                            height: 18.53vw;
                         }
                     }
                     p {

@@ -6,9 +6,7 @@ import keccak256 from 'keccak256'
 
 import Adress from '../models/adress.js'
 
-
-
-export const createHash = async () => {
+export const createHash = async (claimingAddress) => {
     let whitelistAddresses = []
     let dataDd = await Adress.find()
     dataDd.forEach((item)=>{
@@ -16,11 +14,7 @@ export const createHash = async () => {
     })
     const leafNodes = whitelistAddresses.map(addr => keccak256(addr));
     const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true});
-    const rootHash = merkleTree.getRoot();
-    console.log('Whitelist Merkle Tree\n', merkleTree.toString());
-    console.log("Root Hash: ", rootHash);
-    const claimingAddress = leafNodes[0];
-    const hexProof = merkleTree.getHexProof(claimingAddress);
-    console.log(hexProof);
-    console.log(merkleTree.verify(hexProof, claimingAddress, rootHash));
+    const hexProof = merkleTree.getHexProof(keccak256(claimingAddress));
+    const merkleRoot = merkleTree.getHexRoot();
+    return hexProof
 }

@@ -6,6 +6,7 @@
   "type": "module",
   "author": "semtrip1@gmail.com",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "license": "ISC",

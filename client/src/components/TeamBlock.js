@@ -19,7 +19,7 @@ const TeamBlock = () => {
                         <div className="block">
                             <div className="ico two"/>
                             <div className="text">
-                                <span className="name">alex</span>
+                                <span className="name">Axeloo</span>
                                 <div className="line"/>
                                 <span className="role">professional<br/>
                                 programmer.</span>
@@ -37,7 +37,7 @@ const TeamBlock = () => {
                         <div className="block">
                             <div className="ico four"/>
                             <div className="text">
-                                <span className="name">Vladimir</span>
+                                <span className="name">Elfutin</span>
                                 <div className="line"/>
                                 <span className="role">NFT artist</span>
                             </div>
@@ -51,15 +51,14 @@ const TeamBlock = () => {
                     <div className="lists">
                         <div className="list">
                             <div className="head">
-                                <div className="ped"/>
+                                <div className="img"/>   
+                                {/* <div className="ped"/>
                                 <div className="arrow"/>
-                                <div className="sfer"/>
+                                <div className="sfer"/> */}
                             </div>
                             <p className='small'>Staking You send a knight on a crusade, and that’s how staking happen! He can<br/>
                              bring you various bonuses, the largest of which is NFT souls, which can be used on<br/>
-                             the marketplace or upgrade a character in the GEN2 collection with them, from the<br/> 
-                             journey, he can also bring whitelists, free spots from partner projects, free ethereum,<br/> 
-                             subscriptions to various services and utilities.</p>
+                             the marketplace or upgrade a character in the GEN2 collection with them.</p>
                              <ul>
                                 <li className='mg-30'>He can bring:</li>
                                 <li className='grey'>Soulsnft - used in the marketplace/upgrade a character in the cen2</li>

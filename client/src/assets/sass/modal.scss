@@ -10,8 +10,6 @@
     align-items: center;
     justify-content: center;
     .block {
-        width: 62.92vw;
-        height: 23.39vw;
         background: url(../img/bg3.png) no-repeat center;
         background-size: cover;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -30,7 +28,7 @@
             margin-top: 2.29vw;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
             .btn {
                 position: relative;
@@ -49,7 +47,7 @@
                 color: #FFCB06;
                 font-weight: 700;
                 user-select: none;
-                &:last-child {
+                &.mint {
                     background: #215807;
                     border: 0.16vw solid #0D1F04;
                     color: #EE811C;
@@ -87,6 +85,71 @@
                 }
             }
         }
+        .check {
+            margin-top: 1.82vw;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .input {
+                width: 100%;
+                height: 2.71vw;
+                background: #ffffff;
+                border: 0.05vw solid #000000;
+                border-radius: 0.78vw;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input {
+                    font-family: 'TedescaLamont';
+                    width: 94%;
+                    height: 100%;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    font-size: 1.30vw;
+                }
+                .mark {
+                    &.success {
+                        width: 1.25vw;
+                        height: 0.83vw;
+                        background: url(../img/ico/success.svg);
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    &.error {
+                        width: 1.15vw;
+                        height: 1.04vw;
+                        background: url(../img/ico/error.svg);
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+            &-btn {
+                height: 2.71vw;
+                width: 20%;
+                background: linear-gradient(0deg, #215807, #215807), #FFFFFF;
+                border: 0.05vw solid #000000;
+                border-radius: 0.78vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.82vw;
+                color: #FFFFFF;
+                font-family: 'TedescaLamont';
+                cursor: pointer;
+                &:hover {
+                    animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+                }
+                &.sign {
+                    background: #FFFFFF;
+                    color: #000000;
+                }
+            }
+        }
     }
 }
 
@@ -104,11 +167,10 @@
 @media (max-width: 600px) {
     .modal {
         .block {
-            width: 94vw;
-            height: 87.33vw;
+            width: 90%;
             .logo {
-                width: 452px;
-                height: 112px;
+                width: 44.33vw;
+                height: 12.33vw;
             }
             .btns {
                 flex-direction: column;
@@ -138,6 +200,40 @@
                             padding: 1.67vw;
                         }
                     }
+                }
+            }
+            .check {
+                margin-top: 0.52vw;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                .input {
+                    width: 100%;
+                    height: 8.71vw;
+                    border-radius: 0.78vw;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    input {
+                        font-size: 4.30vw;
+                    }
+                    .mark {
+                        &.success {
+                            width: 3.25vw;
+                            height: 2.83vw;
+                        }
+                        &.error {
+                            width: 3.15vw;
+                            height: 3.04vw;
+                        }
+                    }
+                }
+                &-btn {
+                    height: 8.71vw;
+                    width: 100%;
+                    margin-top: 1vw;
+                    font-size: 4.30vw;
                 }
             }
         }

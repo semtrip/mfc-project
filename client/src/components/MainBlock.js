@@ -7,9 +7,9 @@ const MainBlock = ({setActive}) => {
                     <div className="header--content">
                         <div className="social">
                             <a href='https://mfsproject.xyz/' target={'_blank'} rel="noreferrer" className="item logo"/>
-                            <a  target={'_blank'} rel="noreferrer" className="item discord coming"/>
+                            <a href='https://discord.gg/7jHHf8WhgW' target={'_blank'} rel="noreferrer" className="item discord"/>
                             <a href='https://twitter.com/knightsroseseth?s=21&t=h4mZou_4kGnz0oj6rwJTEw' rel="noreferrer" target={'_blank'} className="item twiter"/>
-                            <a target={'_blank'} rel="noreferrer" className="item opensea coming"/>
+                            <a href='https://opensea.io/collection/knight-roses' target={'_blank'} rel="noreferrer" className="item opensea"/>
                         </div>
                         <div className="btn"onClick={()=>{setActive(true)}}>connect wallet</div>
                     </div>
@@ -19,9 +19,9 @@ const MainBlock = ({setActive}) => {
                 <ul>
                     <li>Welcome to WEB3 Kingdom</li> 
                     <li>5005 Supply</li>
-                    <li>0.03 ETH</li>
+                    <li>0.015 ETH</li>
                     <li>Exclusive sale for KnightList only </li>
-                    <li>7 September</li>
+                    <li>8 September 17:00 UTC</li>
                 </ul>
                 <p>Knight and roses is the most mysterious NFT<br/>
                 project, no one knows what happens when the<br/>
